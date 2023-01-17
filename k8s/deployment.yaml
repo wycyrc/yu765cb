@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myu
+  name: frt
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: myu
+      app: frt
   template:
     metadata:
       labels:
-        app: myu
+        app: frt
     spec:
       containers:
-      - image: okteto.dev/myu:latest
-        name: myu
+      - image: okteto.dev/frt:latest
+        name: frt
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "99af137f-3a11-4df6-9216-c8a37100b991"
+          value: "ca991fd6-5017-4684-b824-0fab8c419eb6"
         - name: Vless_Path
-          value: "/fgh76u4wrgjyu"
+          value: "/xcsfdsg4hg"
         - name: Vmess_UUID
-          value: "99af137f-3a11-4df6-9216-c8a37100b991"
+          value: "ca991fd6-5017-4684-b824-0fab8c419eb6"
         - name: Vmess_Path
-          value: "/fdbjui75u56ehtd"
+          value: "/t436ggw3zs"
         - name: Share_Path
           value: "/v2link"
